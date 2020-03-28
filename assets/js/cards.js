@@ -18,10 +18,12 @@ function templateCard(player) {
         Flag,
         Photo,
         Name,
-
         Dribbling,
         ShotPower,
-        ShortPassing
+        ShortPassing,
+        StandingTackle,
+        Stamina,
+        SprintSpeed
     } = player.data
 
     return `
@@ -42,7 +44,7 @@ function templateCard(player) {
                 <div class="name">${Name}</div>
                 <div class="status">
                     <div class="info-values">
-                        <div class="value">90</div>
+                        <div class="value">${SprintSpeed}</div>
                         <div class="title">PAC</div>
                     </div>
                     <div class="info-values">
@@ -54,7 +56,7 @@ function templateCard(player) {
                         <div class="title">SHO</div>
                     </div>
                     <div class="info-values">
-                        <div class="value">90</div>
+                        <div class="value">${StandingTackle}</div>
                         <div class="title">DEF</div>
                     </div>
                     <div class="info-values">
@@ -62,7 +64,7 @@ function templateCard(player) {
                         <div class="title">PAS</div>
                     </div>
                     <div class="info-values">
-                        <div class="value">90</div>
+                        <div class="value">${Stamina}</div>
                         <div class="title">PHY</div>
                     </div>
                 </div>
