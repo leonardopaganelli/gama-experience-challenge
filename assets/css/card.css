@@ -1,0 +1,78 @@
+.fifa-card {
+    background-image: url(https://futhead.cursecdn.com/static/img/20/cards/large/1_18_3.png);
+    font-family: din-condensed, sans-serif;
+    cursor: pointer;
+    width: 240px;
+    height: 340px;
+    background-size: 103.3%;
+    padding: 20px 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    color: #ffe28c;
+    align-items: center;
+}
+
+.fifa-card .left-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.fifa-card .overall {
+    font-size: 36px;
+}
+
+.fifa-card .position {
+    font-size: 22px;
+    margin-top: -12px;
+}
+
+.fifa-card .main-info {
+    display: flex;
+    padding: 24px 0px 0px 0px;
+}
+
+.fifa-card .nation {
+    height: 18px;
+    width: 30px;
+}
+
+.fifa-card .club {
+    left: 30px;
+    width: 30px;
+    margin-top: 6px;
+}
+
+.fifa-card .profile {
+    height: 132px;
+    width: 132px;
+}
+
+.fifa-card .name {
+    font-size: 20px;
+    text-align: center;
+}
+
+.fifa-card .status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 40px;
+    border-bottom: 1px solid #ffe28c;
+    padding-bottom: 10px;
+}
+
+.fifa-card .info-values {
+    display: flex;
+}
+
+.fifa-card .value,
+.fifa-card .title {
+    font-weight: 600;
+}
+
+.fifa-card .title {
+    margin-left: 4px;
+}

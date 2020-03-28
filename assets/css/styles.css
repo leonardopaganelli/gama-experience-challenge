@@ -1,0 +1,32 @@
+body {
+	background-image: radial-gradient(
+      yellow,
+      #f06d06
+    );
+}
+
+h1 {
+	text-align: center;
+}
+
+.modal.fade .modal-dialog {
+    left: 50%;
+    top: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+}
+
+.player-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.fifa {
+    display: flex;
+    flex-flow: column;
+}
+
+html,
+body {
+	height: 100%;
+}
