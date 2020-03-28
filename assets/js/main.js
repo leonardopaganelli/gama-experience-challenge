@@ -17,50 +17,15 @@ function renderChart(data) {
         Name
     } = data;
 
-    // $("#myChar").empty();
     var ctx = document.getElementById('myChart');
+
     if (radarChart) {
         radarChart.destroy()
     }
     radarChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: [
-                "Crossing",
-                "Finishing",
-                "HeadingAccuracy",
-                "ShortPassing",
-                "Volleys",
-                "Dribbling",
-                "Curve",
-                "FKAccuracy",
-                "LongPassing",
-                "BallControl",
-                "Acceleration",
-                "SprintSpeed",
-                "Agility",
-                "Reactions",
-                "Balance",
-                "ShotPower",
-                "Jumping",
-                "Stamina",
-                "Strength",
-                "LongShots",
-                "Aggression",
-                "Interceptions",
-                "Positioning",
-                "Vision",
-                "Penalties",
-                "Composure",
-                "Marking",
-                "StandingTackle",
-                "SlidingTackle",
-                "GKDiving",
-                "GKHandling",
-                "GKKicking",
-                "GKPositioning",
-                "GKReflexes"
-            ],
+            labels: getCharLabels(),
             datasets: [{
                 label: Name,
                 data: getChartData(data),
@@ -75,6 +40,45 @@ function renderChart(data) {
             }
         }
     });
+}
+
+function getCharLabels() {
+    return [
+        "Crossing",
+        "Finishing",
+        "HeadingAccuracy",
+        "ShortPassing",
+        "Volleys",
+        "Dribbling",
+        "Curve",
+        "FKAccuracy",
+        "LongPassing",
+        "BallControl",
+        "Acceleration",
+        "SprintSpeed",
+        "Agility",
+        "Reactions",
+        "Balance",
+        "ShotPower",
+        "Jumping",
+        "Stamina",
+        "Strength",
+        "LongShots",
+        "Aggression",
+        "Interceptions",
+        "Positioning",
+        "Vision",
+        "Penalties",
+        "Composure",
+        "Marking",
+        "StandingTackle",
+        "SlidingTackle",
+        "GKDiving",
+        "GKHandling",
+        "GKKicking",
+        "GKPositioning",
+        "GKReflexes"
+    ]
 }
 
 function getChartData(data) {
