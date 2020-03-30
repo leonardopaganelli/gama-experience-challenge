@@ -10,7 +10,7 @@ O desafio consiste em consumir uma api com dados dos jogadores do Fifa 19, mostr
 
 Os dados foram obtidos através do [dataset do fifa 19](https://www.kaggle.com/karangadiya/fifa19) e expostos na API https://fifagama.herokuapp.com/fifa19/${SKIP}/{LIMIT}
 
-**parametros**:
+**parâmetros**:
 * SKIP: quantidade de dados para serem pulados
 * LIMIT: total de dados para serem retornados
 
@@ -44,8 +44,6 @@ O exemplo pode ser acessado [aqui](https://leonardopaganelli.github.io/gama-expe
 
 ![Test Image 3](/gama-example.gif)
 
-https://cdn.sofifa.org/players/10/19/158023.png
-
 ## * Imagem dos jogadores
 
 Por padrão a imagem dos jogadores vem no seguinte formato:
@@ -60,7 +58,7 @@ Sendo:
 https://cdn.sofifa.org/players/${SIZE}/${GAME_VERSION}/158023.png
 ``
 
-**parametros**:
+**parâmetros**:
 * SIZE: tamanho da image. De 4 à 7 e 10.
 * GAME_VERSION: de qual versão do jogo será a foto. de 07 à 20
 
@@ -162,6 +160,7 @@ players.map((player) => adjustImageVersion(player))
 
 ```
 Abaixo segue o exemplo da imagem dos fifas 07 ao 20 respectivamente.
+
 *Nem todos os jogadores de imagem de fifas anteriores.
 
 ![Imagem do fifa 07](https://cdn.sofifa.org/players/10/07/158023.png)
